@@ -29,9 +29,20 @@ header{
             a{
                 text-decoration: unset;
                 color: rgb(57, 55, 55);
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 20px;
             }
         }
     }
+}
+.menu-item:hover{
+    color:$primary-lt-1;
+
+}
+.menu-item:active{
+    color: $primary;
+
+}
+.active{
+    color:$primary-dk-1;
 }

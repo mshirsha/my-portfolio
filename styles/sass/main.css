@@ -2909,8 +2909,20 @@ header {
 .navigation ul li a {
   text-decoration: unset;
   color: rgb(57, 55, 55);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
+}
+
+.menu-item:hover {
+  color: #8D60E6;
+}
+
+.menu-item:active {
+  color: #7740e1;
+}
+
+.active {
+  color: #7740e1;
 }
 
 .alert-btn {
@@ -3053,7 +3065,43 @@ header {
   grid-column: 2/3;
   background-color: pink;
   display: grid;
-  grid-template-columns: 5rem 1fr 1fr;
+  grid-template-columns: 7rem 30rem 1fr;
+  align-content: center;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.other-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.my-info p:nth-of-type(1) {
+  font-size: 20px;
+  color: #797676;
+  font-weight: 500;
+}
+.my-info p:nth-of-type(2) {
+  margin-bottom: 2rem;
+  color: grey;
+}
+.my-info a {
+  width: 9rem;
+  padding: 0.7rem 0.5rem 0.7rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #7740e1;
+  color: white;
+}
+
+.my-image {
+  width: 200px;
+  height: 200px;
+  background-color: red;
 }
 
 /*# sourceMappingURL=main.css.map */
