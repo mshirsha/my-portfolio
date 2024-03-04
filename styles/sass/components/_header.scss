@@ -1,6 +1,37 @@
 header{
+    
+    background-color: azure;
+    padding: 2rem ;
+    display: grid;
+    grid-template-columns: 10rem 1fr 10rem;
+}
+.header-container{
     grid-column: 2/3;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.my-name{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(57, 55, 55);
+    
+}
+.navigation{
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 2rem;
+        li{
+          
+            a{
+                text-decoration: unset;
+                color: rgb(57, 55, 55);
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+    }
 }

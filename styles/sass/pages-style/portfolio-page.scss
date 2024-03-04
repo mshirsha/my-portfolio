@@ -1,5 +1,16 @@
 .my-portfolio-page{
-    display: grid;
-    grid-template-columns: 5rem 1fr 5rem;
+    height: 100vh; 
 
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 10rem 1fr 10rem;
+    background-color: blanchedalmond;
+    height: calc(100% - 110px);
+}
+.main-conatiner-wrap{
+    grid-column: 2/3;
+    background-color: pink;
+    display: grid;
+    grid-template-columns: 5rem 1fr 1fr ;
 }
