@@ -3161,6 +3161,13 @@ header {
   color: white;
 }
 
+.btns-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+}
+
 .my-image {
   width: 200px;
   height: 200px;
@@ -3263,6 +3270,14 @@ header {
   }
 }
 
+.portfolio-container-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
 .title-name {
   font-weight: 600;
   margin-bottom: 3rem;
@@ -3274,8 +3289,8 @@ header {
 
 .project-img {
   background-color: #7740e1;
-  width: 400px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 .contact-container {
@@ -3288,6 +3303,13 @@ header {
   align-items: center;
   justify-content: start;
   gap: 2rem;
+}
+
+.contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
