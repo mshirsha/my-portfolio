@@ -2906,7 +2906,7 @@ header {
 .my-name {
   font-weight: 600;
   font-size: 20px;
-  color: #393737;
+  color: rgb(57, 55, 55);
 }
 
 @media (max-width: 1024px) {
@@ -2924,7 +2924,7 @@ header {
 }
 .navigation ul li a {
   text-decoration: unset;
-  color: #393737;
+  color: rgb(57, 55, 55);
   font-weight: 500;
   font-size: 20px;
 }
@@ -3045,7 +3045,7 @@ header {
 .warning-alert {
   background-color: #FFF8DF;
   border-radius: unset;
-  border-left: 2px solid #e09407;
+  border-left: 2px solid rgb(224, 148, 7);
   width: 100%;
   padding: 12px;
 }
