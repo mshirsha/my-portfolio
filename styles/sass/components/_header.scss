@@ -3,13 +3,19 @@ header{
     background-color: azure;
     padding: 2rem ;
     display: grid;
-    grid-template-columns: 10rem 1fr 10rem;
+    grid-template-columns: 10% 1fr 10%;
+    @media(max-width:"1024px"){
+       grid-template-columns: 1fr;
+    }
 }
 .header-container{
     grid-column: 2/3;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media(max-width:"1024px"){
+        grid-column: 1/2;
+     }
 }
 .my-name{
     font-weight: 600;
@@ -18,12 +24,16 @@ header{
     
 }
 .navigation{
+    @media(max-width:"1024px"){
+        display: none;
+     }
     ul{
         list-style: none;
         display: flex;
         justify-content: start;
         align-items: center;
         gap: 2rem;
+        margin-bottom: unset;
         li{
           
             a{
@@ -36,13 +46,42 @@ header{
     }
 }
 .menu-item:hover{
-    color:$primary-lt-1;
+    color: $primary-dk-1;
 
 }
 .menu-item:active{
-    color: $primary;
+    color: $primary-dk-2;
 
 }
-.active{
-    color:$primary-dk-1;
+// .active{
+//     color:$primary-dk-1;
+// }
+
+.humburger-menu{
+    display: none;
+    @media(max-width:"1024px"){
+        display: block;
+     }
+}
+.humburger-dropdown{
+    display: block;
+    position: relative;
+    ul{
+        // display: block;
+        flex-direction: column;
+        gap: 1rem;
+        li{
+            margin-bottom: .5rem;
+        }
+    }
+}
+.dropdown-container{
+    width: 100%;
+    background-color: rgba(168, 214, 235,0.8);
+    position: absolute;
+    right: 0;
+    top: 94px;
+    padding: 1rem;
+    z-index: 100;
+    
 }
