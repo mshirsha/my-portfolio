@@ -92,15 +92,15 @@ body p {
 }
 
 .text-primary-dk-3 {
-  color: #7740e1;
+  color: #36137C;
 }
 
 .text-primary-dk-2 {
-  color: #7740e1;
+  color: #4D1CBD;
 }
 
 .text-primary-dk-1 {
-  color: #7740e1;
+  color: #672BDE;
 }
 
 .text-primary {
@@ -2032,15 +2032,15 @@ body p {
 }
 
 .bg-primary-dk3 {
-  background-color: #7740e1;
+  background-color: #36137C;
 }
 
 .bg-primary-dk2 {
-  background-color: #7740e1;
+  background-color: #4D1CBD;
 }
 
 .bg-primary-dk1 {
-  background-color: #7740e1;
+  background-color: #672BDE;
 }
 
 .bg-primary {
@@ -2440,15 +2440,15 @@ body p {
 }
 
 .border-primary-dk3 {
-  border: 2px solid #7740e1;
+  border: 2px solid #36137C;
 }
 
 .border-primary-dk2 {
-  border: 2px solid #7740e1;
+  border: 2px solid #4D1CBD;
 }
 
 .border-primary-dk1 {
-  border: 2px solid #7740e1;
+  border: 2px solid #672BDE;
 }
 
 .border-primary {
@@ -2880,10 +2880,13 @@ h6 {
 }
 
 header {
-  background-color: azure;
   padding: 2rem;
   display: grid;
   grid-template-columns: 10% 1fr 10%;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.075);
 }
 @media (max-width: 1024px) {
   header {
@@ -2930,11 +2933,11 @@ header {
 }
 
 .menu-item:hover {
-  color: #7740e1;
+  color: #672BDE;
 }
 
 .menu-item:active {
-  color: #7740e1;
+  color: #4D1CBD;
 }
 
 .humburger-menu {
@@ -2984,7 +2987,7 @@ header {
 .primary-alert {
   background-color: #F2EDFC;
   border-radius: unset;
-  border-left: 2px solid #7740e1;
+  border-left: 2px solid #672BDE;
   width: 100%;
   padding: 12px;
 }
@@ -2997,11 +3000,11 @@ header {
 }
 .primary-alert p {
   margin-bottom: unset;
-  color: #7740e1;
+  color: #4D1CBD;
   font-weight: 600;
 }
 .primary-alert span {
-  color: #7740e1;
+  color: #4D1CBD;
 }
 
 .secondary-alert {
@@ -3074,7 +3077,7 @@ header {
 }
 
 .btn {
-  border: 1px solid #7740e1 !important;
+  border: 1px solid #4D1CBD !important;
   background-color: #FFFFFF;
   color: #141414;
   display: flex;
@@ -3093,19 +3096,15 @@ header {
   font-weight: 500;
 }
 
-.my-portfolio-page {
-  height: 100vh;
-}
-
 .main-container {
   display: grid;
   grid-template-columns: 10% 1fr 10%;
-  background-color: blanchedalmond;
+  background-color: white;
+  padding-top: 5rem;
 }
 
 .overview-conatiner {
   grid-column: 2/3;
-  background-color: pink;
   display: grid;
   grid-template-columns: 7rem 30rem 1fr;
   align-content: center;
@@ -3118,7 +3117,8 @@ header {
   .overview-conatiner {
     grid-template-columns: 1fr;
     justify-items: start;
-    padding: 1rem;
+    padding: 2rem;
+    padding-block: 4rem;
   }
 }
 
@@ -3179,6 +3179,11 @@ header {
     margin-bottom: 2rem;
   }
 }
+.my-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .contact-btn:hover {
   background-color: #8D60E6 !important;
@@ -3189,9 +3194,9 @@ header {
 }
 
 .about-container {
+  background-color: white;
   grid-column: 2/3;
   margin-bottom: 100px;
-  background-color: darkcyan;
 }
 .about-container h3 {
   font-weight: 600;
@@ -3210,7 +3215,7 @@ header {
   margin-bottom: 80px;
   gap: 1rem;
 }
-@media (max-width: 992px) {
+@media (max-width: 1248px) {
   .skils-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -3225,7 +3230,7 @@ header {
   font-weight: 600;
   margin-bottom: unset;
 }
-@media (max-width: 992px) {
+@media (max-width: 1248px) {
   .skils-container h3 {
     grid-column: 1/3;
   }
@@ -3237,6 +3242,9 @@ header {
 }
 .skils-container .skill-card {
   padding: 1rem;
+}
+.skils-container .skill-card:hover {
+  background-color: #f7f5fa;
 }
 .skils-container .img-container {
   width: 5rem;
@@ -3261,10 +3269,16 @@ header {
   justify-content: center;
   align-items: start;
   gap: 1rem;
+  row-gap: 2rem;
 }
 @media (max-width: 992px) {
   .project-container {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 568px) {
+  .project-container {
+    gap: 3rem;
   }
 }
 .project-container h3 {
@@ -3283,6 +3297,12 @@ header {
   justify-content: center;
   align-items: start;
   gap: 1rem;
+}
+@media (max-width: 568px) {
+  .project-container-wrap {
+    margin-bottom: 2rem;
+    grid-template-columns: 1fr;
+  }
 }
 
 .title-name {
@@ -3326,6 +3346,21 @@ header {
   align-items: center;
   justify-content: start;
   gap: 0.5rem;
+}
+
+.topscroll {
+  padding: 0.5rem;
+  background-color: white;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  border-radius: 1rem;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
 }
 
 /*# sourceMappingURL=main.css.map */
