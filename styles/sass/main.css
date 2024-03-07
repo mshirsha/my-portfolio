@@ -3128,7 +3128,7 @@ header {
 }
 
 .section-container.projects {
-  background-color: #ffe4e4;
+  background-color: white;
 }
 
 .aboutandedu {
@@ -3408,7 +3408,7 @@ header {
   overflow-y: scroll;
   transition: left 0.3s ease;
   padding: 2.5rem;
-  color: #bdbdbd;
+  color: white;
 }
 .project-info-container h4 {
   font-weight: 600;
