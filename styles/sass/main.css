@@ -3128,7 +3128,7 @@ header {
 }
 
 .section-container.projects {
-  background-color: rgb(255, 228, 228);
+  background-color: rgb(255, 255, 255);
 }
 
 .aboutandedu {
@@ -3408,7 +3408,7 @@ header {
   overflow-y: scroll;
   transition: left 0.3s ease;
   padding: 2.5rem;
-  color: rgb(189, 189, 189);
+  color: rgb(255, 255, 255);
 }
 .project-info-container h4 {
   font-weight: 600;
@@ -3421,6 +3421,7 @@ header {
 .project-info-container h6 {
   margin-bottom: unset;
   color: #818181;
+  font-size: 20px;
 }
 .project-info-container .devices {
   display: flex;
