@@ -19,6 +19,14 @@ body p {
   cursor: default;
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
 .text-sm-1 {
   font-size: 0.625rem;
 }
@@ -3096,11 +3104,31 @@ header {
   font-weight: 500;
 }
 
-.main-container {
+.section-container {
   display: grid;
   grid-template-columns: 10% 1fr 10%;
   background-color: white;
   padding-top: 5rem;
+}
+
+.section-container.overview {
+  background-color: #e9f5ff;
+}
+
+.section-container.about-me {
+  background-color: white;
+}
+
+.section-container.qualification {
+  background-color: #d5ebff;
+}
+
+.section-container.skills {
+  background-color: white;
+}
+
+.section-container.projects {
+  background-color: #ffe4e4;
 }
 
 .overview-conatiner {
@@ -3347,6 +3375,13 @@ header {
 }
 .project-info-container h6 {
   margin-bottom: unset;
+}
+.project-info-container .techstacks {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-block: 0.5rem;
+  font-weight: 700;
 }
 
 .project-img {

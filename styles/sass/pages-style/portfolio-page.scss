@@ -1,12 +1,31 @@
 
 
-.main-container {
+.section-container {
     display: grid;
     grid-template-columns: 10% 1fr 10%;
     background-color: white;
     // height: calc(100% - 110px);
     padding-top: 5rem;
+
+    
 }
+
+.section-container.overview {
+    background-color: rgb(233, 245, 255);
+}
+.section-container.about-me {
+    background-color: rgb(255, 255, 255);
+}
+.section-container.qualification{
+    background-color: rgb(213, 235, 255);
+}
+.section-container.skills{
+    background-color: rgb(255, 255, 255);
+}
+.section-container.projects{
+    background-color: rgb(255, 228, 228);
+}
+
 
 .overview-conatiner {
     grid-column: 2/3;
@@ -234,6 +253,7 @@
     font-weight: 600;
     margin-bottom: 3rem;
 }
+
 .project-info-container{
     // margin-bottom: 80px;
   h4{
@@ -244,6 +264,14 @@
   }
     h6{
         margin-bottom: unset;
+    }
+
+    .techstacks{
+        display: flex;
+        gap:1rem;
+        align-items: center;
+        padding-block: .5rem;
+        font-weight: 700;
     }
 }
 .project-img{
